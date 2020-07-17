@@ -22,7 +22,7 @@
         padding-top: 15px !important;
     }
     .container-service{
-        height: 200vh;
+        height: 200vh !important;
     }
     .container-partner-card{
         position: absolute;
@@ -31,6 +31,10 @@
     .title-partner{
         position: absolute;
         top: 5vh;
+    }
+    .container-contact-card{
+        position: absolute;
+        top: 500vh;
     }
 }
 @media screen and (min-width: 768px){
