@@ -384,3 +384,31 @@ nav.scrolled {
     border-radius: 30px !important;
     transition: all 0.5s linear;
 }
+
+footer {
+    background: #ffffff;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    transition: bottom 0.2s ease-in-out;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 48px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 48px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 48px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s linear;
+}
+footer:hover{
+    background: -webkit-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #ffffff !important;
+    z-index: 5 !important;
+    opacity: 1 !important;
+    font-weight: 800;
+    height: 100px;
+}
+
+.nav-down {
+    bottom: -40px;
+}
+
