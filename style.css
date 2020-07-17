@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 200vh;
+}
+
+nav {
+    transition: all 0.5s linear !important;
+}
+
+nav.scrolled {
+    -webkit-box-shadow: 0px -16px 51px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -16px 51px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -16px 51px -2px rgba(0, 0, 0, 0.75);
+}
+
+.container-landing {
+    height: 100vh;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.navbar-brand-txt {
+    font-family: 'Sora', sans-serif !important;
+    font-weight: 800 !important;
+    color: transparent !important;
+    z-index: -1 !important;
+    transition: all 0.5s linear !important;
+    position: relative;
+    top: 2px;
+    left: -250px;
+}
+
+.navbar-brand-txt.scrolled {
+    background: -webkit-linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 315px !important;
+    padding-top: 1px !important;
+    z-index: -1 !important;
+    padding-left: 40px;
+}
+
+#divisor {
+    padding-top: 5px !important;
+}
+
+#navbar-logo {
+    position: fixed;
+    top: 6px;
+    left: -5px;
+    z-index: 2 !important;
+    transition: all 0.5s linear !important;
+}
+
+#navbar-logo.scrolled {
+    z-index: 2 !important;
+    visibility: visible !important;
+}
+
+.rotation {
+    transition: all 0.3s linear;
+}
+
+.rotation:hover {
+    transform: rotate(360deg);
+}
+
+.btn-join {
+    border-radius: 50px !important;
+    transition: all .3s linear !important;
+    color: #fff !important;
+    transition: 0.5s linear;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.btn-join:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 197, 0) !important;
+}
+
+@-webkit-keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgb(0, 197, 0), 0 0 2px rgb(0, 197, 0), 0 0 3px rgb(0, 197, 0), 0 0 4px rgb(0, 197, 0), 0 0 5px rgb(0, 197, 0), 0 0 6px rgb(0, 197, 0), 0 0 7px rgb(0, 197, 0);
+    }
+    to {
+        box-shadow: 0 0 10px rgb(0, 197, 0), 0 0 3px rgb(88, 252, 88), 0 0 4px rgb(88, 252, 88), 0 0 5px rgb(88, 252, 88), 0 0 6px rgb(88, 252, 88), 0 0 7px rgb(88, 252, 88), 0 0 8px rgb(88, 252, 88);
+    }
+}
+
+.btn-join.scrolled {
+    color: #000 !important;
+    background-color: #21D4FD !important;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%) !important;
+    border: transparent !important;
+    color: white !important;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.nav-item {
+    padding-right: 10px !important;
+}
+
+.nav-link, .btn-join {
+    font-family: 'Sora', sans-serif !important;
+    font-weight: 300;
+    color: #fff !important;
+    border-radius: 10px;
+    transition: all .2s linear;
+}
+
+.nav-link:hover {
+    -webkit-box-shadow: 8px 8px 32px 7px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 8px 8px 32px 7px rgba(0, 0, 0, 0.27);
+    box-shadow: 8px 8px 32px 7px rgba(0, 0, 0, 0.27);
+}
+
+.nav-link.scrolled {
+    color: #000 !important;
+}
+
+#navbar-logo {
+    transition: all .5s linear;
+}
+
+#navbar-logo.scrolled {
+    text-shadow: 0px 0px 12px #000;
+}
+
+.motto {
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    text-shadow: 0px 0px 12px rgb(85, 85, 85);
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.navbar-toggler {
+    position: fixed;
+    left: 420px !important;
+    transition: all 500ms linear;
+}
+
+.navbar-toggler.scrolled {
+    position: fixed;
+    left: 300px !important;
+}
+
+.navbar-brand-mobile {
+    position: relative;
+    top: -8px;
+    left: 40%;
+    transition: all 500ms linear;
+}
+
+.navbar-brand-mobile.scrolled {
+    position: relative;
+    left: 0px;
+    text-shadow: 0px 0px 12px #000;
+}
+
+.text-about {
+    font-family: 'Sora', sans-serif;
+    position: absolute;
+    top: 150vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: -webkit-linear-gradient(200deg, #21D4FD 0%, #B721FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-card-service {
+    position: absolute;
+    top: 250vh !important;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+.card-one {
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    border: 0.1px solid transparent !important;
+    border-radius: 30px !important;
+    box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s linear;
+}
+
+.card-one:hover {
+    transform: scale(1.05);
+}
+.card{
+    border: 1px solid transparent !important;
+}
+
+.card-body {
+    border: 1px solid transparent;
+}
+
+.btn-more {
+    text-align: center !important;
+    background-color: white !important;
+    border-radius: 50px !important;
+    font-family: 'Fredoka One' !important;
+}
+
+.card-two {
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    background-color: #21D4FD;
+    background-image: linear-gradient(135deg, #21D4FD 0%, #B721FF 100%);
+    border: 0.1px solid transparent !important;
+    border-radius: 30px !important;
+    box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s linear;
+}
+
+.card-two:hover {
+    transform: scale(1.05);
+}
+
+.card-three {
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    border: 0.1px solid transparent !important;
+    border-radius: 30px !important;
+    box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s linear;
+}
+
+.card-three:hover {
+    transform: scale(1.05);
+}
+
+.card-three {
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    border: 0.1px solid transparent !important;
+    border-radius: 30px !important;
+    box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s linear;
+}
+
+.card-three:hover {
+    transform: scale(1.05);
+}
+
+.card-three {
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    background-color: #FBDA61;
+    background-image: linear-gradient(135deg, #FBDA61 0%, #FF5ACD 100%);
+    border: 0.1px solid transparent !important;
+    border-radius: 30px !important;
+    box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s linear;
+}
+
+.card-three:hover {
+    transform: scale(1.05);
+}
+
+.card-four {
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    background-color: #2BD2FF;
+    background-image: linear-gradient(135deg, #2BD2FF 52%, #2BFF88 90%);    
+    border: 0.1px solid transparent !important;
+    border-radius: 30px !important;
+    box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s linear;
+}
+
+.card-four:hover {
+    transform: scale(1.05);
+}

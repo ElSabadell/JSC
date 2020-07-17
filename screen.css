@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px){
+    .navbar-brand-txt{
+        letter-spacing: -1px !important;
+    }
+    .navbar-desktop{
+        display: none !important;
+    }
+    .navbar-mobile{
+        display: block !important;
+    }
+    .text-about {
+        font-size: 100%;
+    }
+    .card-deck {
+        width: 90% !important;
+        position: absolute;
+        top: 50vh !important;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .nav-item-join{
+        padding-top: 15px !important;
+    }
+}
+@media screen and (min-width: 768px){
+    .navbar-mobile{
+        display: none !important;
+    }
+    .card-deck {
+        width: 90% !important;
+        position: absolute;
+        top: 0vh !important;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
