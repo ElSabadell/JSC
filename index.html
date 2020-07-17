@@ -34,7 +34,7 @@
     <!-- Navbar Desktop -->
 
     <nav class="navbar navbar-expand-lg navbar-default bg-dark fixed-top navbar-desktop">
-        <a href="#">
+        <a href="#home">
             <h1 class="d-inline-block align-top" id="navbar-logo" style="font-size: 35px; color: white; font-family: 'Fredoka One', cursive; letter-spacing: -1px !important; color: white;
             width: 100px; border-radius: 10px; height: 42px;">&nbsp; JSC</h1>
         </a>
@@ -50,20 +50,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fab fa-fort-awesome rotation"></i>&nbsp;Home<span
+                    <a class="nav-link" href="#home"><i class="fab fa-fort-awesome rotation"></i>&nbsp;Home<span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about"><i class="fas fa-users rotation"></i>&nbsp;About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about"><i class="fas fa-briefcase rotation"></i>&nbsp;Our Services</a>
+                    <a class="nav-link" href="#service"><i class="fas fa-briefcase rotation"></i>&nbsp;Our Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#service"><i class="fas fa-handshake rotation"></i>&nbsp;Partners</a>
+                    <a class="nav-link" href="#partner"><i class="fas fa-handshake rotation"></i>&nbsp;Partners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=""><i class="fas fa-mobile rotation"></i>&nbsp;Contacts</a>
+                    <a class="nav-link" href="#contact"><i class="fas fa-mobile rotation"></i>&nbsp;Contacts</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-join">Join Us</button>
@@ -75,7 +75,7 @@
     <!-- Navbar Mobile -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top navbar-mobile">
-        <a class="navbar-brand navbar-brand-mobile" href="#" style="font-size: 35px; color: #fff; font-family: 'Fredoka One', cursive; letter-spacing: -1px !important; color: white;
+        <a class="navbar-brand navbar-brand-mobile" href="#home" style="font-size: 35px; color: #fff; font-family: 'Fredoka One', cursive; letter-spacing: -1px !important; color: white;
         width: 100px; border-radius: 10px; height: 42px;">JSC</a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +84,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fab fa-fort-awesome rotation"></i>&nbsp;Home<span
+                    <a class="nav-link" href="#home"><i class="fab fa-fort-awesome rotation"></i>&nbsp;Home<span
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -97,6 +97,9 @@
                     <a class="nav-link disabled" href="#partner"><i
                             class="fas fa-mobile rotation"></i>&nbsp;Contacts</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><i class="fas fa-mobile rotation"></i>&nbsp;Contacts</a>
+                </li>
                 <div class="dropdown-divider"></div>
                 <li class="nav-item nav-item-join">
                     <button class="btn btn-join">Join Us</button>
@@ -105,10 +108,10 @@
         </div>
     </nav>
 
-    <div class="container-landing">
+    <div class="container-landing" id="home">
         <h1 class="motto">THE <span style="font-weight: 800;">GREAT <br> EUROPEAN</span> <br> TEXTILE TRADITION</h1>
     </div>
-    <div class="container-fluid container-about" id="about">
+    <div class="container-fluid container-about" id="about" style="height: 100vh;">
         <h1 class="text-about" style="width: 90% !important;" align="justify">Jordi Sabadell has over 30 years of work
             in the textile world, collaborating directly
             with some of the most important manufacturers and producers of textile machinery in Europe and the rest of
@@ -161,8 +164,53 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="partner">
-        
+    <div class="container-fluid container-partner" id="partner" style="height: 100vh;">
+        <div class="container-fluid container-partner-card">
+            <h1 style="text-align: center;" class="title-partner">OUR PARTNERS</h1>
+            <div class="card-deck">
+                <div class="card mb-4">
+                    <div class="card-body card-partner-MAS">
+                        <img src="MAS_Logo.png" alt="" width="300px">
+                        <p class="card-text" style="padding-top: 15px; font-family: 'Sora', sans-serif; font-weight: 600; background: -webkit-linear-gradient(200deg, #21D4FD 0%, #B721FF 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">The Future of Web Development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid container-contact" style="height: 100vh;" id="contact">
+        <div class="container-fluid container-contact-card">
+            <h1 style="text-align: center;" class="title-contact">CONTACTS</h1>
+            <div class="card-deck">
+                <div class="card mb-4">
+                    <div class="card-body card-contact-phone">
+                        <h1 class="card-title" style="font-family: 'Fredoka One', cursive !important; color: #fff; text-align: left;">Phones</h1>
+                        <p class="card-text" style="padding-top: 15px; font-family: 'Sora', sans-serif; font-weight: 600; background: -webkit-linear-gradient(200deg, #21D4FD 0%, #B721FF 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">The Future of Web Development.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body card-contact-mail">
+                        <h1 class="card-title" style="font-family: 'Fredoka One', cursive !important; color: #fff; text-align: left;">Email</h1>
+                        <p class="card-text" style="padding-top: 15px; font-family: 'Sora', sans-serif; font-weight: 600; background: -webkit-linear-gradient(200deg, #21D4FD 0%, #B721FF 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">The Future of Web Development.</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body card-contact-social">
+                        <h1 class="card-title" style="font-family: 'Fredoka One', cursive !important; color: #fff; text-align: left;">Socials</h1>
+                        <p class="card-text" style="padding-top: 15px; font-family: 'Sora', sans-serif; font-weight: 600; background: -webkit-linear-gradient(200deg, #21D4FD 0%, #B721FF 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">The Future of Web Development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>

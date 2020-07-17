@@ -21,6 +21,17 @@
     .nav-item-join{
         padding-top: 15px !important;
     }
+    .container-service{
+        height: 200vh;
+    }
+    .container-partner-card{
+        position: absolute;
+        top: 400vh;
+    }
+    .title-partner{
+        position: absolute;
+        top: 5vh;
+    }
 }
 @media screen and (min-width: 768px){
     .navbar-mobile{
