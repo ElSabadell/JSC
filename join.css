@@ -190,7 +190,7 @@ a:hover {
     text-decoration: none !important;
 }
 .card{
-    width: 50%;
+    width: 80%;
     position: absolute;
     top: 50vh;
     left: 50%;
@@ -211,7 +211,7 @@ input{
 }
 input:hover{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 .btn{
     border-radius: 50px !important;
@@ -220,5 +220,5 @@ input:hover{
 }
 .btn:hover{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
