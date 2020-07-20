@@ -10,18 +10,13 @@
 html {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-body {
-    min-height: 200vh;
-}
 
 nav {
     -webkit-box-shadow: 0px -16px 51px -2px rgba(0, 0, 0, 0.75);
@@ -35,21 +30,17 @@ nav {
     color: transparent !important;
     z-index: -1 !important;
     transition: all 0.5s linear !important;
-    position: relative;
-    top: 2px;
-    left: -250px;
 }
 
 .navbar-brand-txt {
     background: -webkit-linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left: 315px !important;
+    padding-left: 70px !important;
     padding-top: 1px !important;
     z-index: -1 !important;
     padding-left: 40px;
 }
-
 #navbar-logo {
     position: fixed;
     top: 6px;
@@ -197,4 +188,37 @@ footer:hover {
 
 a:hover {
     text-decoration: none !important;
+}
+.card{
+    width: 50%;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);
+    background-color: #2BD2FF;
+    background-image: linear-gradient(135deg, #2BD2FF 52%, #2BFF88 90%);
+    border: 0.1px solid transparent !important;
+    border-radius: 30px !important;
+    box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s linear;
+}
+input{
+    border-radius: 50px !important;
+    transition: all .5s linear;
+}
+input:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);
+    transform: scale(1.05);
+}
+.btn{
+    border-radius: 50px !important;
+    background-color: #fff !important;
+    transition: all .5s linear;
+}
+.btn:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);
+    transform: scale(1.05);
 }
