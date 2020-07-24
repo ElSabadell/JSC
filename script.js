@@ -84,7 +84,11 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
-// When the user scrolls the page, execute myFunction
+
+//==========
+// Scrollbar
+//==========
+
 window.onscroll = function () { myFunction() };
 
 function myFunction() {
