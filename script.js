@@ -42,6 +42,14 @@ $(window).scroll(function () {
     $('.progress-container').toggleClass('scrolled', $(this).scrollTop() > 10);
 });
 
+$(window).scroll(function () {
+    $('.language').toggleClass('scrolled', $(this).scrollTop() > 10);
+});
+
+$(window).scroll(function () {
+    $('.flag').toggleClass('scrolled', $(this).scrollTop() > 10);
+});
+
 //===================
 // Hide & Seek Footer
 //===================
@@ -97,3 +105,4 @@ function myFunction() {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
 }
+

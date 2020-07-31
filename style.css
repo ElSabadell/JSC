@@ -57,7 +57,6 @@ nav.scrolled {
     padding-left: 315px !important;
     padding-top: 1px !important;
     z-index: -1 !important;
-    padding-left: 40px;
 }
 
 #divisor {
@@ -565,4 +564,48 @@ a:hover {
     font-family: 'Fredoka One', cursive;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);
     border-radius: 50px !important;
+}
+
+.language {
+    text-align: right;
+    width: 170px !important;
+    height: 40px;
+    background-image: none !important;
+    border-radius: 100px !important;
+    position: fixed;
+    top: 50vh;
+    left: -120px !important;
+    transition: all .5s linear !important;
+    background-color: transparent !important;
+}
+
+.flag {
+    padding-top: 6px;
+    padding-left: 10px;
+    display: none !important;
+    transition: all 1s linear !important;
+}
+
+.flag.scrolled {
+    float: right;
+    display: block !important;
+    transition: all .1s linear;
+}
+
+
+.language:hover {
+    /* width: 200px !important; */
+    /* margin-left: 400px !important; */
+    position: fixed;
+    top: 50vh;
+    left: 16px !important;
+    transform: scale(1.5);
+}
+
+.language.scrolled {
+    background-color: #2BD2FF;
+    background-image: linear-gradient(135deg, #2BD2FF 52%, #2BFF88 90%) !important;
+    /* border: 1px solid #fff !important; */
+    box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+
 }

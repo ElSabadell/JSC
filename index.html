@@ -7,7 +7,7 @@
     <title>Jordi Sabadell</title>
 
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <link href="screen.css" rel="stylesheet">
 
     <!--     Font Awesome     -->
@@ -15,7 +15,38 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        var arrLang = new Array();
+        arrLang['en'] = new Array();
+        arrLang['it'] = new Array();
 
+        // English content
+        arrLang['en']['home'] = 'Home';
+        arrLang['en']['about'] = 'About Us';
+        arrLang['en']['desc'] = 'Jordi Sabadell has over 30 years of work in the textile world, collaborating directly with some of the most important manufacturers and producers of textile machinery in Europe and the rest of the world. This thirty-year experience has taught me the importance of continuous adaptation to new standards of textile manufacturers, thus bringing innovative, practical and productive solutions. My philosophy is to get the most out of my customers machines, making them more efficient and productive at the same time.'
+
+
+        // Khmer content (Cambodian Language) 
+        // Please change to your own language
+        arrLang['it']['home'] = 'Casa';
+        arrLang['it']['about'] = 'Chi Siamo';
+        arrLang['it']['desc'] = 'Jordi Sabadell ha oltre 30 anni di lavoro nel mondo tessile, collaborando direttamente con alcuni dei più importanti produttori e produttori di macchine tessili in Europa e nel resto del mondo. Questa esperienza trentennale mi ha insegnato il valore di un continuo adattamento ai nuovi standard dei produttori tessili, portando così soluzioni innovative, pratiche e produttive. La mia filosofia è quella di ottenere il massimo dalle macchine dei miei clienti, rendendole più efficienti e produttive allo stesso tempo.'
+
+
+
+        // Process translation
+        $(function () {
+            $('.translate').click(function () {
+                var lang = $(this).attr('id');
+
+                $('.lang').each(function (index, item) {
+                    $(this).text(arrLang[lang][$(this).attr('key')]);
+                });
+            });
+        });
+    </script>
     <style>
         .bg-dark {
             background-color: transparent !important;
@@ -49,11 +80,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home"><i class="fab fa-fort-awesome rotation"></i>&nbsp;Home<span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home"><i class="fab fa-fort-awesome rotation"></i>&nbsp;<span
+                            class="lang" key="home">Home</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about"><i class="fas fa-users rotation"></i>&nbsp;About Us</a>
+                    <a class="nav-link lang" href="#about" key="about"><i class="fas fa-users rotation"></i>&nbsp;About
+                        Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#service"><i class="fas fa-briefcase rotation"></i>&nbsp;Our Services</a>
@@ -111,7 +143,9 @@
         <a class="fas fa-arrow-down bounce" id="arrow-down"></a>
     </div>
     <div class="container-fluid container-about" id="about" style="height: 100vh;">
-        <h1 class="text-about" style="width: 90% !important;" align="justify">Jordi Sabadell has over 30 years of work
+
+        <h1 class="text-about lang" key="desc" style="width: 90% !important;" align="justify">Jordi Sabadell has over 30
+            years of work
             in the textile world, collaborating directly
             with some of the most important manufacturers and producers of textile machinery in Europe and the rest of
             the world. This thirty-year experience has taught me the importance of continuous adaptation to new
@@ -139,8 +173,8 @@
                             Card title</h1>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
-                            <button class="btn btn-more" data-toggle="modal" data-target="#exampleModa2">More...</button>
-                        </div>
+                        <button class="btn btn-more" data-toggle="modal" data-target="#exampleModa2">More...</button>
+                    </div>
                 </div>
                 <div class="w-100 d-none d-sm-block d-md-none">
                     <!-- wrap every 2 on sm-->
@@ -152,7 +186,7 @@
                             Card title</h1>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
-                            <button class="btn btn-more" data-toggle="modal" data-target="#exampleModa3">More...</button>
+                        <button class="btn btn-more" data-toggle="modal" data-target="#exampleModa3">More...</button>
                     </div>
                 </div>
                 <div class="w-100 d-none d-sm-block d-md-none">
@@ -165,7 +199,7 @@
                             Card title</h1>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
-                            <button class="btn btn-more" data-toggle="modal" data-target="#exampleModa4">More...</button>
+                        <button class="btn btn-more" data-toggle="modal" data-target="#exampleModa4">More...</button>
                     </div>
                 </div>
             </div>
@@ -181,7 +215,8 @@
                         <p class="card-text" style="padding-top: 15px; font-family: 'Sora', sans-serif; font-weight: 600; background: -webkit-linear-gradient(200deg, #21D4FD 0%, #B721FF 100%);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;">The Future of Web Development.</p>
-                        <button class="btn btn-more-partner" data-toggle="modal" data-target="#exampleModalMAS">More...</button>
+                        <button class="btn btn-more-partner" data-toggle="modal"
+                            data-target="#exampleModalMAS">More...</button>
                     </div>
                 </div>
             </div>
@@ -243,15 +278,19 @@
                     <h5 class="modal-title" style="font-family: 'Fredoka One', cursive; " id="exampleModalLabel">Modal
                         title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <h1 class="btn-exit" aria-hidden="true" style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">EXIT</h1>
+                        <h1 class="btn-exit" aria-hidden="true"
+                            style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">
+                            EXIT</h1>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="card-img">
                         <img src="https://source.unsplash.com/1920x1080/?nature,water
-                        " alt="" style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
+                        " alt=""
+                            style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
                     </div>
-                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad libero maiores quasi voluptates,
+                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad
+                        libero maiores quasi voluptates,
                         modi tempora ab molestiae labore sequi!</p>
                 </div>
             </div>
@@ -266,15 +305,19 @@
                     <h5 class="modal-title" style="font-family: 'Fredoka One', cursive; " id="exampleModalLabel">Modal
                         title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <h1 class="btn-exit" aria-hidden="true" style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">EXIT</h1>
+                        <h1 class="btn-exit" aria-hidden="true"
+                            style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">
+                            EXIT</h1>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="card-img">
                         <img src="https://source.unsplash.com/1920x1080/?nature,water
-                        " alt="" style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
+                        " alt=""
+                            style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
                     </div>
-                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad libero maiores quasi voluptates,
+                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad
+                        libero maiores quasi voluptates,
                         modi tempora ab molestiae labore sequi!</p>
                 </div>
             </div>
@@ -289,15 +332,19 @@
                     <h5 class="modal-title" style="font-family: 'Fredoka One', cursive; " id="exampleModalLabel">Modal
                         title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <h1 class="btn-exit" aria-hidden="true" style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">EXIT</h1>
+                        <h1 class="btn-exit" aria-hidden="true"
+                            style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">
+                            EXIT</h1>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="card-img">
                         <img src="https://source.unsplash.com/1920x1080/?nature,water
-                        " alt="" style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
+                        " alt=""
+                            style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
                     </div>
-                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad libero maiores quasi voluptates,
+                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad
+                        libero maiores quasi voluptates,
                         modi tempora ab molestiae labore sequi!</p>
                 </div>
             </div>
@@ -312,43 +359,73 @@
                     <h5 class="modal-title" style="font-family: 'Fredoka One', cursive; " id="exampleModalLabel">Modal
                         title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <h1 class="btn-exit" aria-hidden="true" style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">EXIT</h1>
+                        <h1 class="btn-exit" aria-hidden="true"
+                            style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">
+                            EXIT</h1>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="card-img">
                         <img src="https://source.unsplash.com/1920x1080/?nature,water
-                        " alt="" style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
+                        " alt=""
+                            style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
                     </div>
-                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad libero maiores quasi voluptates,
+                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad
+                        libero maiores quasi voluptates,
                         modi tempora ab molestiae labore sequi!</p>
                 </div>
             </div>
         </div>
     </div>
-     <!-- Modal MAS -->
-     <div class="modal fade" style="background-color: #fff; text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);"
-     id="exampleModalMAS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-dialog-centered" role="document">
-         <div class="modal-content modal-contentMAS">
-             <div class="modal-header">
-                 <h5 class="modal-title" style="font-family: 'Fredoka One', cursive; " id="exampleModalLabel">Modal
-                     title</h5>
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <h1 class="btn-exit" aria-hidden="true" style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">EXIT</h1>
-                 </button>
-             </div>
-             <div class="modal-body">
-                 <div class="card-img">
-                     <img src="https://source.unsplash.com/1920x1080/?nature,water
-                     " alt="" style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
-                 </div>
-                 <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad libero maiores quasi voluptates,
-                     modi tempora ab molestiae labore sequi!</p>
-             </div>
-         </div>
-     </div>
- </div>
+    <!-- Modal MAS -->
+    <div class="modal fade" style="background-color: #fff; text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);"
+        id="exampleModalMAS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-contentMAS">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="font-family: 'Fredoka One', cursive; " id="exampleModalLabel">Modal
+                        title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <h1 class="btn-exit" aria-hidden="true"
+                            style="width: 70px; color: rgb(168, 0, 0); font-size: 90% !important; font-family: 'Fredoka One', sans-serif;">
+                            EXIT</h1>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-img">
+                        <img src="https://source.unsplash.com/1920x1080/?nature,water
+                     " alt=""
+                            style="box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342); width: 100%; border-radius: 30px !important; height: 100%;">
+                    </div>
+                    <p style="padding-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad
+                        libero maiores quasi voluptates,
+                        modi tempora ab molestiae labore sequi!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="language container container-language" data-toggle="tooltip" data-placement="right"
+        title="Choose the Language">
+                <ul>
+                    <li><a href="#en" id="en" class="translate">
+                        <img style="display: block; text-align: right; padding-top: -100px; overflow: hidden;" class="flag"
+                            src="https://www.countryflags.io/gb/flat/24.png"></img>
+                    </a></li>
+                    <li><a href="#it" id="it" class="translate"><img style="display: block; text-align: right;" class="flag"
+                        src="https://www.countryflags.io/it/flat/24.png"></img></a></li>
+                    <li><a href="#es" id="es" class="translate"><img style="display: block; text-align: right;" class="flag"
+                        src="https://www.countryflags.io/es/flat/24.png"></img></a></li>
+                    <style>
+                        li{
+                            display: inline;
+                        }
+                    </style>
+                </ul>
+        
+    </div>
+
+
     <footer class="nav-down"
         style="text-align: center; padding-top: 5px; font-family: 'Sora', sans-serif; font-weight: 300;">
         <p>CHECK OUT OUR SOCIAL NETWORK&nbsp;&nbsp;&nbsp;<i class="fas fa-ellipsis-h"></i></p>
