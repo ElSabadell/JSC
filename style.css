@@ -607,5 +607,14 @@ a:hover {
     background-image: linear-gradient(135deg, #2BD2FF 52%, #2BFF88 90%) !important;
     /* border: 1px solid #fff !important; */
     box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.carousel-item img{
+    border-radius: 30px !important;
+}
 
+.flag{
+    transition: all .1s linear !important;
+}
+.flag:hover{
+    transform: scale(1.1);
 }
