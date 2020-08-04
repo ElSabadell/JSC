@@ -592,7 +592,6 @@ a:hover {
     transition: all .1s linear;
 }
 
-
 .language:hover {
     /* width: 200px !important; */
     /* margin-left: 400px !important; */
@@ -608,13 +607,15 @@ a:hover {
     /* border: 1px solid #fff !important; */
     box-shadow: -7px -7px 20px 0 rgba(219, 219, 219, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
 }
-.carousel-item img{
+
+.carousel-item img {
     border-radius: 30px !important;
 }
 
-.flag{
+.flag {
     transition: all .1s linear !important;
 }
-.flag:hover{
+
+.flag:hover {
     transform: scale(1.1);
 }

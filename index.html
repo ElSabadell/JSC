@@ -28,11 +28,20 @@
         arrLang['en']['desc'] = 'Jordi Sabadell has over 30 years of work in the textile world, collaborating directly with some of the most important manufacturers and producers of textile machinery in Europe and the rest of the world. This thirty-year experience has taught me the importance of continuous adaptation to new standards of textile manufacturers, thus bringing innovative, practical and productive solutions. My philosophy is to get the most out of my customers machines, making them more efficient and productive at the same time.'
 
 
-        // Khmer content (Cambodian Language) 
-        // Please change to your own language
+        // Italian content
         arrLang['it']['home'] = 'Casa';
         arrLang['it']['about'] = 'Chi Siamo';
+        arrLang['it']['service'] = 'I Nostri Servizi';
+        arrLang['it']['partner'] = 'I nostri Partners';
+        arrLang['it']['contact'] = 'Contatti';
+        arrLang['it']['join'] = 'Unisciti';
         arrLang['it']['desc'] = 'Jordi Sabadell ha oltre 30 anni di lavoro nel mondo tessile, collaborando direttamente con alcuni dei più importanti produttori e produttori di macchine tessili in Europa e nel resto del mondo. Questa esperienza trentennale mi ha insegnato il valore di un continuo adattamento ai nuovi standard dei produttori tessili, portando così soluzioni innovative, pratiche e produttive. La mia filosofia è quella di ottenere il massimo dalle macchine dei miei clienti, rendendole più efficienti e produttive allo stesso tempo.'
+        arrLang['it']['ass'] = 'Assemblaggio';
+        arrLang['it']['change'] = 'Modifiche';
+        arrLang['it']['repair'] = 'Manutenzione';
+        arrLang['it']['wws'] = 'Servizio Mondiale';
+        arrLang['it']['footer'] = 'GUARDA I NOSTRI SOCIAL';
+
 
 
 
@@ -84,7 +93,7 @@
                             class="lang" key="home">Home</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link lang" href="#about" key="about"><i class="fas fa-users rotation"></i>&nbsp;<span
+                    <a class="nav-link" href="#about"><i class="fas fa-users rotation"></i>&nbsp;<span
                         class="lang" key="about">About Us</span>
                         </a>
                 </li>
@@ -98,10 +107,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact"><i class="fas fa-mobile rotation"></i>&nbsp;<span
-                        class="lang" key="contact">Home</span></a>
+                        class="lang" key="contact">Contacts</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-join" role="button" href="/join.html">Join Us</a>
+                    <a class="btn btn-join lang" role="button" href="/join.html" key="join">Join Us</a>
                 </li>
             </ul>
         </div>
@@ -119,24 +128,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home"><i class="fab fa-fort-awesome rotation"></i>&nbsp;Home<span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home"><i class="fab fa-fort-awesome rotation"></i>&nbsp;<span
+                        class="lang" key="home">Home</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about"><i class="fas fa-users rotation"></i>&nbsp;About Us</a>
+                    <a class="nav-link" href="#about"><i class="fas fa-users rotation"></i>&nbsp;<span
+                        class="lang" key="about">About Us</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#service"><i class="fas fa-briefcase rotation"></i>&nbsp;Our Services</a>
+                    <a class="nav-link" href="#service"><i class="fas fa-briefcase rotation"></i>&nbsp;<span
+                        class="lang" key="service">Our Services</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#partner"><i class="fas fa-handshake rotation"></i>&nbsp;Partners</a>
+                    <a class="nav-link" href="#partner"><i class="fas fa-handshake rotation"></i>&nbsp;<span
+                        class="lang" key="partner">Our Partners</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact"><i class="fas fa-mobile rotation"></i>&nbsp;Contacts</a>
+                    <a class="nav-link" href="#contact"><i class="fas fa-mobile rotation"></i>&nbsp;<span
+                        class="lang" key="contact">Contacts</span></a>
                 </li>
                 <div class="dropdown-divider"></div>
                 <li class="nav-item">
-                    <a class="btn btn-join" role="button" href="/join.html">Join Us</a>
+                    <a class="btn btn-join lang" role="button" href="/join.html" key="join">Join Us</a>
                 </li>
             </ul>
         </div>
@@ -162,10 +175,10 @@
             <div class="card-deck">
                 <div class="card mb-4">
                     <div class="card-body card-one">
-                        <h1 class="card-title"
+                        <h1 class="card-title lang" key="ass"
                             style=" text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.342);font-family: 'Fredoka One', cursive !important; font-size: 35px; padding-bottom: 30px;">
                             Assembly</h1>
-                        <p class="card-text">We offer technical assistance for both new and used machines. We also follow the growth of the machine from assembly to packaging and finally shipping.</p>
+                        <p class="card-text lang" key="txt-ass">We offer technical assistance for both new and used machines. We also follow the growth of the machine from assembly to packaging and finally shipping.</p>
                         <button class="btn btn-more" data-toggle="modal" data-target="#exampleModal">More...</button>
                     </div>
                 </div>
